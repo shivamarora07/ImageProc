@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="422dp"
+        android:layout_height="238dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/btnAGCIE"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="btnAGCIE_click"
+        android:text="AGCIE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAGCIEDSUS"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="btnAGCIEDSUS_click"
+        android:text="AGCIE DSUS"
+        app:layout_constraintBottom_toTopOf="@+id/btnAGCIE"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAGCWD"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="btnAGCWD_click"
+        android:text="AGCWD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAGCIE" />
+
+    <Button
+        android:id="@+id/btnAGCWDDSUS"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="btnAGCWDDSUS_click"
+        android:text="AGCWD DSUS"
+        app:layout_constraintBottom_toTopOf="@+id/btnAGCWD"
+        app:layout_constraintStart_toEndOf="@+id/btnAGCIEDSUS" />
+
+    <Button
+        android:id="@+id/btnBIMEF"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="btnBIMEF_click"
+        android:text="BIMEF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAGCWD" />
+
+    <Button
+        android:id="@+id/btnBIMEFDSUS"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="btnBIMEFDSUS_click"
+        android:text="BIMEF DSUS"
+        app:layout_constraintBottom_toTopOf="@+id/btnBIMEF"
+        app:layout_constraintStart_toEndOf="@+id/btnAGCWDDSUS" />
+
+    <ImageView
+        android:id="@+id/imageViewOutput"
+        android:layout_width="422dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:text="OUTPUT"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewOutput" />
+
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="btnLoad_click"
+        android:text="LOAD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBIMEF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:text="INPUT IMAGE"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView" />
+
+</android.support.constraint.ConstraintLayout>
